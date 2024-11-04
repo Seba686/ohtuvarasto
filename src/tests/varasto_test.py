@@ -21,7 +21,7 @@ class TestVarasto(unittest.TestCase):
     def test_lisays_lisaa_pienentaa_vapaata_tilaa(self):
         self.varasto.lisaa_varastoon(8)
 
-        # vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2
+        # vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2.
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 2)
 
     def test_ottaminen_palauttaa_oikean_maaran(self):
@@ -36,7 +36,7 @@ class TestVarasto(unittest.TestCase):
 
         self.varasto.ota_varastosta(2)
 
-        # varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
+        # varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4.
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 4)
 
     def test_liikaa_ottaminen(self):
