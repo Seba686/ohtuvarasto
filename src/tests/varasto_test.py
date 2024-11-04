@@ -72,4 +72,4 @@ class TestVarasto(unittest.TestCase):
     def test_negatiivinen_alku_saldo(self):
         self.varasto2 = Varasto(10, -1)
 
-        self.assertAlmostEqual(self.varasto2.saldo, 1)
+        self.assertAlmostEqual(self.varasto2.saldo, 0)
